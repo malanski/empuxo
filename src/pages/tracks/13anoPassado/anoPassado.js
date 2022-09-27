@@ -3,6 +3,7 @@ import anoPassado from '../../../assets/anoPassado.jpg'
 import { Link } from 'react-router-dom'
 import anoPassadoLetra from '../../../assets/anoPassadoLetra.png'
 import anoPassadoAudio from '../../../assets/audio/anoPassado.mp3'
+import { Icon } from '@mui/material'
 
 export function AnoPassado () {
     return (
@@ -13,9 +14,21 @@ export function AnoPassado () {
                 <source src={anoPassadoAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
             </audio>
-            <Link to="/tracks/aphantasia">
-                <p>Anterior</p>
-            </Link>
+
+            <div className='tracks-navigation'>
+
+                <Link to="/tracks/aphantasia">
+                    <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
+                </Link>
+
+                <div></div>
+
+            </div>
 
             <div className='image-container'>
                 <img src={anoPassadoLetra} alt="Album cover"/>

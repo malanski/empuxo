@@ -4,6 +4,7 @@ import camaleaoLetra from '../../../assets/camaleaoLetra.png'
 import camaleaoAudio from '../../../assets/audio/camaleao.mp3'
 
 import { Link } from 'react-router-dom'
+import { Icon } from '@mui/material'
 
 export function Camaleao() {
     return (
@@ -19,9 +20,19 @@ export function Camaleao() {
 
                 <Link to="/tracks/ondePossoTeVer">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/viajante">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 

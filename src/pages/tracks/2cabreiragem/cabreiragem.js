@@ -3,6 +3,7 @@ import cabreiragem from '../../../assets/cabreiragem.jpg'
 import cabreiragemLetra from '../../../assets/cabreiragemLetra.png'
 import cabreiragemAudio from '../../../assets/audio/cabreiragem.mp3'
 import { Link } from 'react-router-dom'
+import { Icon } from '@mui/material'
 
 export function Cabreiragem() {
     return (
@@ -19,9 +20,19 @@ export function Cabreiragem() {
 
                 <Link to="/tracks/marmota">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/ondePossoTeVer">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 

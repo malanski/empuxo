@@ -3,6 +3,7 @@ import viajante from '../../../assets/viajante.png'
 import viajanteLetra from '../../../assets/viajanteLetra.png'
 import viajanteAudio from '../../../assets/audio/viajante.mp3'
 import { Link } from 'react-router-dom'
+import { Icon } from '@mui/material'
 
 export function Viajante() {
     return (
@@ -17,9 +18,19 @@ export function Viajante() {
 
                 <Link to="/tracks/camaleao">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/hidra">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 

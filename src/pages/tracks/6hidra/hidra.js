@@ -3,6 +3,7 @@ import hidra from '../../../assets/hidra.jpg'
 import { Link } from 'react-router-dom'
 import hidraLetra from '../../../assets/hidraLetra.png'
 import hidraAudio from '../../../assets/audio/hidra.mp3'
+import { Icon } from '@mui/material'
 
 export function Hidra() {
     return (
@@ -17,9 +18,20 @@ export function Hidra() {
 
                 <Link to="/tracks/viajante">
                     <p>Anterior</p>
+
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/ditadoPopular">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 

@@ -3,6 +3,7 @@ import qualeh from '../../../assets/qualeh.png'
 import { Link } from 'react-router-dom'
 import qualehLetra from '../../../assets/qualehLetra.png'
 import qualehAudio from '../../../assets/audio/qualeh.mp3'
+import { Icon } from '@mui/material'
 
 export function Qualeh() {
     return (
@@ -16,9 +17,19 @@ export function Qualeh() {
             <div className='tracks-navigation'>
                 <Link to="/tracks/casulo">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/aphantasia">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
             <div className='image-container'>

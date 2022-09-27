@@ -3,6 +3,7 @@ import ditadoPopular from '../../../assets/ditadoPopular.png'
 import { Link } from 'react-router-dom'
 import ditadoPopularLetra from '../../../assets/ditadoPopularLetra.png'
 import ditadoPopularAudio from '../../../assets/audio/ditadoPopular.mp3'
+import { Icon } from '@mui/material'
 
 export function DitadoPopular() {
     return (
@@ -17,9 +18,19 @@ export function DitadoPopular() {
 
                 <Link to="/tracks/hidra">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/soAmetade">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 

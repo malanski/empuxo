@@ -3,6 +3,7 @@ import ondePossoTeVer from '../../../assets/ondePossoTeVer.jpg'
 import ondePossoTeVerLetra from '../../../assets/ondePossoTeVerLetra.png'
 import ondePossoTeVerAudio from '../../../assets/audio/ondePossoTeVer.mp3'
 import { Link } from 'react-router-dom'
+import { Icon } from '@mui/material'
 
 export function OndePossoTeVer() {
     return (
@@ -17,9 +18,19 @@ export function OndePossoTeVer() {
             <div className='tracks-navigation'>
                 <Link to="/tracks/cabreiragem">
                     <p>Anterior</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_rewind
+                        </span>
+                    </Icon>
                 </Link>
                 <Link to="/tracks/camaleao">
                     <p>Proxima</p>
+                    <Icon>
+                        <span class="material-icons-outlined">
+                            fast_forward
+                        </span>
+                    </Icon>
                 </Link>
             </div>
 
