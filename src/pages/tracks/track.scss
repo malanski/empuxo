@@ -1,0 +1,37 @@
+.tracks {
+    background-color: rgb(80, 80, 80);
+    .tracks-player {
+        width: 90%;
+    }
+
+    .tracks-navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+    }
+    .image-container {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .tracks {
+        .album-back-container{
+            ol{
+                a{
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
