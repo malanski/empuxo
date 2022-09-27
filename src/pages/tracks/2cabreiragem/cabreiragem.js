@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Cabreiragem() {
     return (
         <div className='tracks'>
-            <h2>02# Cabreiragem</h2>
 
 
             <audio className='tracks-player' controls>
@@ -26,6 +25,9 @@ export function Cabreiragem() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>02# Cabreiragem</h2>
+
                 <Link to="/tracks/ondePossoTeVer">
                     <p>Proxima</p>
                     <Icon>

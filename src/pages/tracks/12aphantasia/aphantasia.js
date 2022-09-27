@@ -8,12 +8,13 @@ import { Icon } from '@mui/material'
 export function Aphantasia() {
     return (
         <div className='tracks'>
-            <h2>12# Qual é</h2>
+            
                                      
             <audio className='tracks-player' controls>
                 <source src={aphantasiaAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
             </audio>
+
             <div className='tracks-navigation'>
                 <Link to="/tracks/qualeh">
                     <p>Anterior</p>
@@ -23,6 +24,9 @@ export function Aphantasia() {
                         </span>
                     </Icon>
                 </Link>
+
+                <h2>12# Aphantasia</h2>
+                
                 <Link to="/tracks/anoPassado">
                     <p>Proxima</p>
                     <Icon>

@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Qualeh() {
     return (
         <div className='tracks'>
-            <h2>11# Qual é</h2>
                          
             <audio className='tracks-player' controls>
                 <source src={qualehAudio} type="audio/mpeg" />
@@ -23,6 +22,9 @@ export function Qualeh() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>11# Qual é</h2>
+
                 <Link to="/tracks/aphantasia">
                     <p>Proxima</p>
                     <Icon>

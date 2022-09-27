@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Viajante() {
     return (
         <div className='tracks'>
-            <h2>05# Viajante</h2>
 
             <audio className='tracks-player' controls>
                 <source src={viajanteAudio} type="audio/mpeg" />
@@ -24,6 +23,9 @@ export function Viajante() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>05# Viajante</h2>
+
                 <Link to="/tracks/hidra">
                     <p>Proxima</p>
                     <Icon>

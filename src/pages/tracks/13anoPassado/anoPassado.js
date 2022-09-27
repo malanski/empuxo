@@ -8,7 +8,7 @@ import { Icon } from '@mui/material'
 export function AnoPassado () {
     return (
         <div className='tracks'>
-            <h2>13# Ano Passado</h2>
+           
 
             <audio className='tracks-player' controls>
                 <source src={anoPassadoAudio} type="audio/mpeg" />
@@ -25,6 +25,8 @@ export function AnoPassado () {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>13# Ano Passado</h2>
 
                 <div></div>
 

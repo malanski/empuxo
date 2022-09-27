@@ -8,8 +8,6 @@ import { Icon } from '@mui/material'
 export function DitadoPopular() {
     return (
         <div className='tracks'>
-            <h2>07# Ditado Popular</h2>
-
             <audio className='tracks-player' controls>
                 <source src={ditadoPopularAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -24,6 +22,9 @@ export function DitadoPopular() {
                         </span>
                     </Icon>
                 </Link>
+
+                <h2>07# Ditado Popular</h2>
+
                 <Link to="/tracks/soAmetade">
                     <p>Proxima</p>
                     <Icon>

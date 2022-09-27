@@ -1,14 +1,22 @@
 .tracks {
     background-color: rgb(80, 80, 80);
+
     .tracks-player {
         width: 90%;
+        background-color: red;
+        border-radius: 20px 20px 0 0;
+        height: 100%;
+        margin-bottom: 0;
     }
 
     .tracks-navigation {
         display: flex;
         justify-content: space-between;
-        width: 70%;
-        margin: auto;
+        width: 90%;
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(80, 15, 15);
+        padding: 5px;
+        margin: 0 auto 5px auto;
     }
     .image-container {
         background-color: black;

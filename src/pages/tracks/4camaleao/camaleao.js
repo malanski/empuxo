@@ -9,7 +9,6 @@ import { Icon } from '@mui/material'
 export function Camaleao() {
     return (
         <div className='tracks'>
-            <h2>04# Camaleão</h2>
             
             <audio className='tracks-player' controls>
                 <source src={camaleaoAudio} type="audio/mpeg" />
@@ -26,6 +25,9 @@ export function Camaleao() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>04# Camaleão</h2>
+
                 <Link to="/tracks/viajante">
                     <p>Proxima</p>
                     <Icon>

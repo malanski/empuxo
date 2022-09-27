@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function OndePossoTeVer() {
     return (
         <div className='tracks'>
-            <h2>03# Onde Posso Te Ver</h2>
 
             <audio className='tracks-player' controls>
                 <source src={ondePossoTeVerAudio} type="audio/mpeg" />
@@ -24,6 +23,9 @@ export function OndePossoTeVer() {
                         </span>
                     </Icon>
                 </Link>
+
+                <h2>03# Onde Posso Te Ver</h2>
+
                 <Link to="/tracks/camaleao">
                     <p>Proxima</p>
                     <Icon>

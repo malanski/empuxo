@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Camarao() {
     return (
         <div className='tracks'>
-            <h2>09# Camarão</h2>
             
             <audio className='tracks-player' controls>
                 <source src={camaraoAudio} type="audio/mpeg" />
@@ -23,6 +22,9 @@ export function Camarao() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>09# Camarão</h2>
+
                 <Link to="/tracks/casulo">
                     <p>Proxima</p>
                     <Icon>

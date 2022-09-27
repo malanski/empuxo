@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Casulo() {
     return (
         <div className='tracks'>
-            <h2>10# Casulo</h2>
              
             <audio className='tracks-player' controls>
                 <source src={casuloAudio} type="audio/mpeg" />
@@ -24,6 +23,9 @@ export function Casulo() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>10# Casulo</h2>
+
                 <Link to="/tracks/qualeh">
                     <p>Proxima</p>
                     <Icon>

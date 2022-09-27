@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function Hidra() {
     return (
         <div className='tracks'>
-            <h2>06# Hidra</h2>
 
             <audio className='tracks-player' controls>
                 <source src={hidraAudio} type="audio/mpeg" />
@@ -25,6 +24,9 @@ export function Hidra() {
                         </span>
                     </Icon>
                 </Link>
+                
+                <h2>06# Hidra</h2>
+
                 <Link to="/tracks/ditadoPopular">
                     <p>Proxima</p>
                     <Icon>

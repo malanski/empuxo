@@ -9,14 +9,17 @@ import Icon from '@mui/material/Icon'
 export function Marmota() {
     return (
         <div className='tracks'>
-            <h2>01# Marmota</h2>
 
             <audio className='tracks-player' controls>
                 <source src={marmotaAudio} type="audio/mpeg" />
-                Your browser does not support the audio tag.
+                Sorry, your browser does not support the audio tag.
             </audio>
+
             <div className='tracks-navigation'>
                 <div></div>
+
+                <h2>01# Marmota</h2>
+
                 <Link to="/tracks/cabreiragem">
                     <p>Proxima</p>
                     <Icon>

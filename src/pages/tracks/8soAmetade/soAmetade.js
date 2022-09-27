@@ -8,7 +8,6 @@ import { Icon } from '@mui/material'
 export function SoAmetade() {
     return (
         <div className='tracks'>
-            <h2>08# Só a Metade</h2>
             
             <audio className='tracks-player' controls>
                 <source src={soAmetadeAudio} type="audio/mpeg" />
@@ -24,6 +23,10 @@ export function SoAmetade() {
                         </span>
                     </Icon>
                 </Link>
+
+                <h2>08# Só a Metade</h2>
+
+
                 <Link to="/tracks/camarao">
                     <p>Proxima</p>
                     <Icon>
