@@ -37,8 +37,14 @@ export function Casulo() {
             </div>
 
             <div className='image-container'>
-                <img src={casuloLetra} alt="Album cover" />
-                <img src={casulo} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={casuloLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={casulo}
+                    alt="Track illustration" />
             </div>
         </div>
     )

@@ -41,9 +41,14 @@ export function Cabreiragem() {
 
 
             <div className='image-container'>
-                <img src={cabreiragemLetra} alt="Album cover" />
-
-                <img src={cabreiragem} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={cabreiragemLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={cabreiragem}
+                    alt="Track illustration" />
             </div>
         </div>
     )

@@ -39,8 +39,14 @@ export function Camaleao() {
             </div>
 
             <div className='image-container'>
-                <img src={camaleaoLetra} alt="Album cover" />
-                <img src={camaleao} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={camaleaoLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={camaleao}
+                    alt="Track illustration" />
             </div>
         </div>
     )

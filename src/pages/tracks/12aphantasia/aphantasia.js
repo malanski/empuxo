@@ -37,9 +37,16 @@ export function Aphantasia() {
                 </Link>
             </div>
 
+            
             <div className='image-container'>
-                <img src={aphantasiaLetra} alt="Album cover" />
-                <img src={aphantasia} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={aphantasiaLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={aphantasia}
+                    alt="Track illustration" />
             </div>
         </div>
     )

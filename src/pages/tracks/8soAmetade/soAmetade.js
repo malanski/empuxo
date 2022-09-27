@@ -38,8 +38,14 @@ export function SoAmetade() {
             </div>
 
             <div className='image-container'>
-                <img src={soAmetadeLetra} alt="Album cover" />
-                <img src={soAmetade} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={soAmetadeLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={soAmetade}
+                    alt="Track illustration" />
             </div>
         </div>
     )

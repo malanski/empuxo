@@ -37,9 +37,16 @@ export function Hidra() {
                 </Link>
             </div>
 
+
             <div className='image-container'>
-                <img src={hidraLetra} alt="Album cover" />
-                <img src={hidra} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={hidraLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={hidra}
+                    alt="Track illustration" />
             </div>
         </div>
     )

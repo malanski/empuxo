@@ -33,8 +33,14 @@ export function Marmota() {
             {/* <Player /> */}
 
             <div className='image-container'>
-                <img src={marmotaLetra} alt="Album cover" />
-                <img src={marmota} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={marmotaLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={marmota}
+                    alt="Track illustration" />
             </div>
         </div>
     )

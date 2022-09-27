@@ -36,8 +36,14 @@ export function Camarao() {
             </div>
 
             <div className='image-container'>
-                <img src={camaraoLetra} alt="Album cover" />
-                <img src={camarao} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={camaraoLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={camarao}
+                    alt="Track illustration" />
             </div>
         </div>
     )

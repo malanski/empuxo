@@ -34,9 +34,16 @@ export function Qualeh() {
                     </Icon>
                 </Link>
             </div>
+
             <div className='image-container'>
-                <img src={qualehLetra} alt="Album cover" />
-                <img src={qualeh} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={qualehLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={qualeh}
+                    alt="Track illustration" />
             </div>
         </div>
     )

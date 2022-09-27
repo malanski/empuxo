@@ -36,9 +36,16 @@ export function Viajante() {
                 </Link>
             </div>
 
+
             <div className='image-container'>
-                <img src={viajanteLetra} alt="Album cover" />
-                <img src={viajante} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={viajanteLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={viajante}
+                    alt="Track illustration" />
             </div>
         </div>
     )

@@ -17,6 +17,7 @@
         background-color: rgb(80, 15, 15);
         padding: 5px;
         margin: 0 auto 5px auto;
+
     }
     .image-container {
         background-color: black;
@@ -25,20 +26,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        img {
+        .lyrics, .illustration {
             width: 50%;
         }
     }
 }
 @media screen and (max-width: 768px) {
     .tracks {
-        .album-back-container{
-            ol{
-                a{
-                    li{
-                        width: 100%;
-                    }
-                }
+        .tracks-navigation {
+            h2 {
+                font-size: 18px;
+            }
+        }
+        .image-container{
+            flex-direction: column;
+            height: auto;
+            .lyrics {
+                height: 90vh;
+                width: 100%;
+            }
+            .illustration {
+                width: 100%;
             }
         }
     }

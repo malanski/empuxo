@@ -34,10 +34,15 @@ export function DitadoPopular() {
                     </Icon>
                 </Link>
             </div>
-
             <div className='image-container'>
-                <img src={ditadoPopularLetra} alt="Album cover" />
-                <img src={ditadoPopular} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={ditadoPopularLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={ditadoPopular}
+                    alt="Track illustration" />
             </div>
         </div>
     )

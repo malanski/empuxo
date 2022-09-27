@@ -37,8 +37,14 @@ export function OndePossoTeVer() {
             </div>
 
             <div className='image-container'>
-                <img src={ondePossoTeVerLetra} alt="Album cover" />
-                <img src={ondePossoTeVer} alt="Album cover" />
+                <img 
+                    className='lyrics'
+                    src={ondePossoTeVerLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={ondePossoTeVer}
+                    alt="Track illustration" />
             </div>
         </div>
     )

@@ -33,8 +33,14 @@ export function AnoPassado () {
             </div>
 
             <div className='image-container'>
-                <img src={anoPassadoLetra} alt="Album cover"/>
-                <img src={anoPassado} alt="Album cover"/>
+                <img 
+                    className='lyrics'
+                    src={anoPassadoLetra}
+                    alt="Album cover lyrics" />
+                <img 
+                    className='illustration'
+                    src={anoPassado}
+                    alt="Track illustration" />
             </div>
         </div>
     )
