@@ -1,6 +1,6 @@
 import { Icon } from '@mui/material'
 import './Footer.scss'
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export function Footer() {
     return (
@@ -15,7 +15,7 @@ export function Footer() {
                         className="footer-links">
 
                         <Icon>
-                            <span class="material-icons-outlined">
+                            <span className="material-icons-outlined">
                                 smart_display
                             </span>
                         </Icon>
@@ -39,7 +39,7 @@ export function Footer() {
                         className="footer-links">
 
                         <Icon>
-                            <span class="material-icons-outlined">
+                            <span className="material-icons-outlined">
                                 cloud
                             </span>
                         </Icon>
@@ -51,8 +51,16 @@ export function Footer() {
             <br />
             <br />
             <div>
-                <p>Copyrights ₢ - Ulisses Malanski - 2021</p>
-                <p>Desenvolvido por Ulisses Malanski - 2022</p>
+                <p>Desenvolvido por Ulisses Malanski Copyrights ₢ - 2022</p>
+                <br />
+
+                    <a href="https://github.com/malanski" alt='github profile'
+                        target='_blank'
+                        rel="noreferrer"
+                        title='my web development projects'>
+                        <GitHubIcon>
+                        </GitHubIcon>
+                    </a>
             </div>
 
         </div>

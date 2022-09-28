@@ -19,7 +19,7 @@ export function Aphantasia() {
                 <Link to="/tracks/qualeh">
                     <p>Anterior</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_rewind
                         </span>
                     </Icon>
@@ -30,7 +30,7 @@ export function Aphantasia() {
                 <Link to="/tracks/anoPassado">
                     <p>Proxima</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_forward
                         </span>
                     </Icon>

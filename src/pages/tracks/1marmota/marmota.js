@@ -23,7 +23,7 @@ export function Marmota() {
                 <Link to="/tracks/cabreiragem">
                     <p>Proxima</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_forward
                         </span>
                     </Icon>

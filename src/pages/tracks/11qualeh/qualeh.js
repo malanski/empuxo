@@ -17,7 +17,7 @@ export function Qualeh() {
                 <Link to="/tracks/casulo">
                     <p>Anterior</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_rewind
                         </span>
                     </Icon>
@@ -28,7 +28,7 @@ export function Qualeh() {
                 <Link to="/tracks/aphantasia">
                     <p>Proxima</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_forward
                         </span>
                     </Icon>

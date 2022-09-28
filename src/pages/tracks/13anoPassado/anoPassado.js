@@ -20,7 +20,7 @@ export function AnoPassado () {
                 <Link to="/tracks/aphantasia">
                     <p>Anterior</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_rewind
                         </span>
                     </Icon>

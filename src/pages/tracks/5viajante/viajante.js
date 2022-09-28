@@ -18,7 +18,7 @@ export function Viajante() {
                 <Link to="/tracks/camaleao">
                     <p>Anterior</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_rewind
                         </span>
                     </Icon>
@@ -29,7 +29,7 @@ export function Viajante() {
                 <Link to="/tracks/hidra">
                     <p>Proxima</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_forward
                         </span>
                     </Icon>

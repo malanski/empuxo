@@ -20,7 +20,7 @@ export function Camaleao() {
                 <Link to="/tracks/ondePossoTeVer">
                     <p>Anterior</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_rewind
                         </span>
                     </Icon>
@@ -31,7 +31,7 @@ export function Camaleao() {
                 <Link to="/tracks/viajante">
                     <p>Proxima</p>
                     <Icon>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             fast_forward
                         </span>
                     </Icon>

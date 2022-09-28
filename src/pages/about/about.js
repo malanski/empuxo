@@ -1,5 +1,5 @@
 import './about.scss'
-
+import poster from '../../assets/poster.jpg'
 export function About() {
     return (
         <div className='about'>
@@ -33,7 +33,7 @@ export function About() {
                             </p>
                             <br />
                             <p>
-                                Produção 100%',<br />
+                                Produção 100%,<br />
                                 Independente.<br />
                                 Made in Brazil
                                 Curitiba - Paraná - 2021
@@ -77,7 +77,9 @@ export function About() {
 
             </div>
 
-
+                <img  className="album-poster"
+                    src={poster}
+                    alt="Empuxo poster"></img>
         </div>
     )
 }
