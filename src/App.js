@@ -1,8 +1,8 @@
 import './App.scss';
 
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import Canvas from './components/Mandala';
+import { Footer } from './components/Footer/Footer';
+import Canvas from './components/Canvas/Canvas';
 
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Home } from './pages/home';
@@ -178,9 +178,6 @@ function App() {
 
 
         <Footer />
-
-        
-
       </HashRouter>
     </div>
   );
