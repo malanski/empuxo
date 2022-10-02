@@ -1,8 +1,8 @@
 import './App.scss';
 
 import { Header } from './components/Header';
-import { Footer } from './components/Footer/Footer';
-import Canvas from './components/Mandala/Canvas';
+import { Footer } from './components/Footer';
+import Canvas from './components/Mandala';
 
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Home } from './pages/home';
