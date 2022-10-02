@@ -1,0 +1,44 @@
+body{
+    overflow: hidden;
+}
+
+#canvas1 {
+    position: absolute;
+    /* border: 1px solid black;
+    background: blue; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#canvas2 {
+    position: relative;
+    /* border: 1px solid black;
+    background: blue; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(360deg);
+
+}
+#canvas3 {
+    position:static; 
+    /* border: 1px solid black;
+    background: blue; */
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: rotate(360deg);
+}
+
+#canvas4 {
+    /* position: absolute; */
+    /* border: 1px solid black;
+    background: blue; */
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}

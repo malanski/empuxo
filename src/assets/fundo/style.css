@@ -1,0 +1,18 @@
+/* body{
+    background-color: black;
+} */
+
+
+.teste {
+    background-image: url('https://www.figma.com/file/oMYCDyVORucqrRrohyQpwC/Desafio-01---Front-end?node-id=6%3A102');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* tca 3 */
+
+position: absolute;
+width: 276.83px;
+height: 297.84px;
+
+background: url(tca.png);
+
