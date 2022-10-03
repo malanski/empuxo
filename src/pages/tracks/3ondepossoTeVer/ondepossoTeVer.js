@@ -21,7 +21,7 @@ export function OndePossoTeVer() {
                 }}
                 controls
             />
-            
+
             {/* <audio className='tracks-player' controls>
                 <source src={ondePossoTeVerAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -48,17 +48,20 @@ export function OndePossoTeVer() {
                     </Icon>
                 </Link>
             </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={ondePossoTeVerLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={ondePossoTeVer}
+                        alt="Track illustration" />
+                </div>
+            </details>
 
-            <div className='image-container'>
-                <img
-                    className='lyrics'
-                    src={ondePossoTeVerLetra}
-                    alt="Album cover lyrics" />
-                <img
-                    className='illustration'
-                    src={ondePossoTeVer}
-                    alt="Track illustration" />
-            </div>
         </div>
     )
 }

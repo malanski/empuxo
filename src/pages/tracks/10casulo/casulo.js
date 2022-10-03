@@ -9,8 +9,8 @@ import ReactAudioPlayer from 'react-audio-player'
 export function Casulo() {
     return (
         <div className='tracks'>
-             
-             <ReactAudioPlayer
+
+            <ReactAudioPlayer
                 src={casuloAudio}
                 style={{
                     width: '90%',
@@ -21,7 +21,7 @@ export function Casulo() {
                 }}
                 controls
             />
-            
+
             {/* <audio className='tracks-player' controls>
                 <source src={casuloAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -36,7 +36,7 @@ export function Casulo() {
                         </span>
                     </Icon>
                 </Link>
-                
+
                 <h2>10# Casulo</h2>
 
                 <Link to="/tracks/qualeh">
@@ -48,17 +48,22 @@ export function Casulo() {
                     </Icon>
                 </Link>
             </div>
+            
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={casuloLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={casulo}
+                        alt="Track illustration" />
+                </div>
+            </details>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={casuloLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={casulo}
-                    alt="Track illustration" />
-            </div>
         </div>
+
     )
 }

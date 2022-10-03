@@ -9,7 +9,7 @@ import ReactAudioPlayer from 'react-audio-player'
 export function DitadoPopular() {
     return (
         <div className='tracks'>
-            
+
             <ReactAudioPlayer
                 src={ditadoPopularAudio}
                 style={{
@@ -47,16 +47,21 @@ export function DitadoPopular() {
                     </Icon>
                 </Link>
             </div>
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={ditadoPopularLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={ditadoPopular}
-                    alt="Track illustration" />
-            </div>
+
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={ditadoPopularLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={ditadoPopular}
+                        alt="Track illustration" />
+                </div>
+            </details>
+
         </div>
     )
 }

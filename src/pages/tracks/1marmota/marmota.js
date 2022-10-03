@@ -15,11 +15,13 @@ export function Marmota() {
 
             <ReactAudioPlayer
                 src={marmotaAudio}
-                style={{ width:'90%',
-                backgroundColor: 'black',
-                borderRadius: '20px 20px 0 0',
-                padding: '5px',
-                marginTop:'10px'}}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
 
                 controls
             />
@@ -53,8 +55,9 @@ export function Marmota() {
 
             {/* <Player /> */}
 
-            <div className='image-container'>
-                <details name="player">
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
                     <img
                         className='lyrics'
                         src={marmotaLetra}
@@ -63,9 +66,11 @@ export function Marmota() {
                         className='illustration'
                         src={marmota}
                         alt="Track illustration" />
-                </details>
 
-            </div>
+
+                </div>
+            </details>
+
         </div>
     )
 }

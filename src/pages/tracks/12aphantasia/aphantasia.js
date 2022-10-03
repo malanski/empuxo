@@ -21,7 +21,7 @@ export function Aphantasia() {
                 }}
                 controls
             />
-                                 
+
             {/* <audio className='tracks-player' controls>
                 <source src={aphantasiaAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -50,16 +50,20 @@ export function Aphantasia() {
             </div>
 
             
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={aphantasiaLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={aphantasia}
-                    alt="Track illustration" />
-            </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={aphantasiaLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={aphantasia}
+                        alt="Track illustration" />
+                </div>
+            </details>
         </div>
     )
 }

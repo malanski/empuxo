@@ -36,7 +36,7 @@ export function Camaleao() {
                         </span>
                     </Icon>
                 </Link>
-                
+
                 <h2>04# Camaleão</h2>
 
                 <Link to="/tracks/viajante">
@@ -49,16 +49,20 @@ export function Camaleao() {
                 </Link>
             </div>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={camaleaoLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={camaleao}
-                    alt="Track illustration" />
-            </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={camaleaoLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={camaleao}
+                        alt="Track illustration" />
+                </div>
+            </details>
+
         </div>
     )
 }

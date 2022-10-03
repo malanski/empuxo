@@ -1,6 +1,15 @@
 .tracks {
     background-color: rgb(80, 80, 80);
 
+    .detalhes {
+        padding: 10px 0 20px 0;
+        display: block;
+        .detalhesName {
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        
+    }
     .tracks-player {
         width: 90%;
         background-color: red;

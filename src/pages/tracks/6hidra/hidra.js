@@ -36,7 +36,7 @@ export function Hidra() {
                         </span>
                     </Icon>
                 </Link>
-                
+
                 <h2>06# Hidra</h2>
 
                 <Link to="/tracks/ditadoPopular">
@@ -49,17 +49,20 @@ export function Hidra() {
                 </Link>
             </div>
 
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={hidraLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={hidra}
+                        alt="Track illustration" />
+                </div>
+            </details>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={hidraLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={hidra}
-                    alt="Track illustration" />
-            </div>
         </div>
     )
 }

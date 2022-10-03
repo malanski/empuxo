@@ -9,8 +9,8 @@ import ReactAudioPlayer from 'react-audio-player'
 export function SoAmetade() {
     return (
         <div className='tracks'>
-            
-            
+
+
             <ReactAudioPlayer
                 src={soAmetadeAudio}
                 style={{
@@ -50,16 +50,20 @@ export function SoAmetade() {
                 </Link>
             </div>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={soAmetadeLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={soAmetade}
-                    alt="Track illustration" />
-            </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={soAmetadeLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={soAmetade}
+                        alt="Track illustration" />
+                </div>
+            </details>
+
         </div>
     )
 }

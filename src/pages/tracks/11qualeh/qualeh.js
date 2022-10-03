@@ -21,7 +21,7 @@ export function Qualeh() {
                 }}
                 controls
             />
-            
+
             {/* <audio className='tracks-player' controls>
                 <source src={qualehAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -48,16 +48,20 @@ export function Qualeh() {
                 </Link>
             </div>
 
-            <div className='image-container'>
-                <img
-                    className='lyrics'
-                    src={qualehLetra}
-                    alt="Album cover lyrics" />
-                <img
-                    className='illustration'
-                    src={qualeh}
-                    alt="Track illustration" />
-            </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={qualehLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={qualeh}
+                        alt="Track illustration" />
+                </div>
+            </details>
+
         </div>
     )
 }

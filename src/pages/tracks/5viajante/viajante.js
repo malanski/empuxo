@@ -37,7 +37,7 @@ export function Viajante() {
                         </span>
                     </Icon>
                 </Link>
-                
+
                 <h2>05# Viajante</h2>
 
                 <Link to="/tracks/hidra">
@@ -50,17 +50,20 @@ export function Viajante() {
                 </Link>
             </div>
 
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={viajanteLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={viajante}
+                        alt="Track illustration" />
+                </div>
+            </details>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={viajanteLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={viajante}
-                    alt="Track illustration" />
-            </div>
         </div>
     )
 }

@@ -9,8 +9,8 @@ import ReactAudioPlayer from 'react-audio-player'
 export function Camarao() {
     return (
         <div className='tracks'>
-            
-            
+
+
             <ReactAudioPlayer
                 src={camaraoAudio}
                 style={{
@@ -22,7 +22,7 @@ export function Camarao() {
                 }}
                 controls
             />
-            
+
             {/* <audio className='tracks-player' controls>
                 <source src={camaraoAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
@@ -36,7 +36,7 @@ export function Camarao() {
                         </span>
                     </Icon>
                 </Link>
-                
+
                 <h2>09# Camarão</h2>
 
                 <Link to="/tracks/casulo">
@@ -49,16 +49,20 @@ export function Camarao() {
                 </Link>
             </div>
 
-            <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={camaraoLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={camarao}
-                    alt="Track illustration" />
-            </div>
+            <details className='detalhes'>
+                <summary className='detalhesName'>Letras</summary>
+                <div className='image-container'>
+                    <img
+                        className='lyrics'
+                        src={camaraoLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={camarao}
+                        alt="Track illustration" />
+                </div>
+            </details>
+
         </div>
     )
 }
