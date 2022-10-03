@@ -43,7 +43,7 @@ function App() {
     
 
     function drawingFlower() {
-      let hue = 1;
+      // let hue = 1;
       // Draw each frame
       // ctx.fillStyle = 'hsl(' + hue + 5 + ', 100%, 50%';
       ctx.fillStyle = 'hsl(linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
@@ -58,7 +58,7 @@ function App() {
       ctx.stroke();
 
       number++
-      hue++
+      // hue++
       // hue += 0.5
     }
     
@@ -86,7 +86,7 @@ function App() {
       let positionX = radius * Math.sin(angle) + ctx.canvas.width ;
       let positionY = radius * Math.cos(angle) + ctx.canvas.height;
 
-      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + 5 + ', 100%, 50%' + '0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
+      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + 5 + ', 100%, 50%, 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
 
       // ctx.fillStyle = 'hsl(' + hue + 5 + ', 100%, 50%';
       ctx.strokeStyle = 'hsl(' + number + 5 + ', 100%, 50%';

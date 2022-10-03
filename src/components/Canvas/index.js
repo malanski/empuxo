@@ -1,1 +1,1 @@
-export * from './Mandala'
+export * from './Canvas'
