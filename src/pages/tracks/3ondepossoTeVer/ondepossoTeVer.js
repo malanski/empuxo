@@ -4,15 +4,28 @@ import ondePossoTeVerLetra from '../../../assets/ondePossoTeVerLetra.png'
 import ondePossoTeVerAudio from '../../../assets/audio/ondePossoTeVer.mp3'
 import { Link } from 'react-router-dom'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function OndePossoTeVer() {
     return (
         <div className='tracks'>
 
-            <audio className='tracks-player' controls>
+            <ReactAudioPlayer
+                src={ondePossoTeVerAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            
+            {/* <audio className='tracks-player' controls>
                 <source src={ondePossoTeVerAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
 
             <div className='tracks-navigation'>
                 <Link to="/tracks/cabreiragem">
@@ -37,11 +50,11 @@ export function OndePossoTeVer() {
             </div>
 
             <div className='image-container'>
-                <img 
+                <img
                     className='lyrics'
                     src={ondePossoTeVerLetra}
                     alt="Album cover lyrics" />
-                <img 
+                <img
                     className='illustration'
                     src={ondePossoTeVer}
                     alt="Track illustration" />

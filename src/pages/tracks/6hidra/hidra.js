@@ -4,15 +4,27 @@ import { Link } from 'react-router-dom'
 import hidraLetra from '../../../assets/hidraLetra.png'
 import hidraAudio from '../../../assets/audio/hidra.mp3'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function Hidra() {
     return (
         <div className='tracks'>
 
-            <audio className='tracks-player' controls>
+            <ReactAudioPlayer
+                src={hidraAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            {/* <audio className='tracks-player' controls>
                 <source src={hidraAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
             <div className='tracks-navigation'>
 
                 <Link to="/tracks/viajante">

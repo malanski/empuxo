@@ -4,16 +4,27 @@ import { Link } from 'react-router-dom'
 import anoPassadoLetra from '../../../assets/anoPassadoLetra.png'
 import anoPassadoAudio from '../../../assets/audio/anoPassado.mp3'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function AnoPassado () {
     return (
         <div className='tracks'>
            
-
-            <audio className='tracks-player' controls>
+           <ReactAudioPlayer
+                src={anoPassadoAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            {/* <audio className='tracks-player' controls>
                 <source src={anoPassadoAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
 
             <div className='tracks-navigation'>
 

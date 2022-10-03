@@ -4,15 +4,29 @@ import { Link } from 'react-router-dom'
 import camaraoLetra from '../../../assets/camaraoLetra.png'
 import camaraoAudio from '../../../assets/audio/camarao.mp3'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function Camarao() {
     return (
         <div className='tracks'>
             
-            <audio className='tracks-player' controls>
+            
+            <ReactAudioPlayer
+                src={camaraoAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            
+            {/* <audio className='tracks-player' controls>
                 <source src={camaraoAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
             <div className='tracks-navigation'>
                 <Link to="/tracks/soAmetade">
                     <p>Anterior</p>

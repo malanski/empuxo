@@ -4,15 +4,28 @@ import { Link } from 'react-router-dom'
 import casuloLetra from '../../../assets/casuloLetra.png'
 import casuloAudio from '../../../assets/audio/casulo.mp3'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function Casulo() {
     return (
         <div className='tracks'>
              
-            <audio className='tracks-player' controls>
+             <ReactAudioPlayer
+                src={casuloAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            
+            {/* <audio className='tracks-player' controls>
                 <source src={casuloAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
             <div className='tracks-navigation'>
 
                 <Link to="/tracks/camarao">

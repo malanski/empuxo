@@ -5,15 +5,36 @@ import { Link } from 'react-router-dom'
 import marmotaLetra from '../../../assets/marmotaLetra.png'
 import marmotaAudio from '../../../assets/audio/marmota.mp3'
 import Icon from '@mui/material/Icon'
+import ReactAudioPlayer from "react-audio-player";
+
+
 
 export function Marmota() {
     return (
         <div className='tracks'>
 
-            <audio className='tracks-player' controls>
-                <source src={marmotaAudio} preload='none' type="audio/mpeg" />
-                Sorry, your browser does not support the audio tag.
-            </audio>
+            <ReactAudioPlayer
+                src={marmotaAudio}
+                style={{ width:'90%',
+                backgroundColor: 'black',
+                borderRadius: '20px 20px 0 0',
+                padding: '5px',
+                marginTop:'10px'}}
+
+                controls
+            />
+
+            {/* <details name="player">
+                <audio className='tracks-player'
+                    controls
+                    controlsList='nodownload'>
+                    <source src={marmotaAudio}
+                        preload='metadata'
+                        // onEmptied
+                        type="audio/mpeg" />
+                    Sorry, your browser does not support the audio tag.
+                </audio>
+            </details> */}
 
             <div className='tracks-navigation'>
                 <div></div>
@@ -33,14 +54,17 @@ export function Marmota() {
             {/* <Player /> */}
 
             <div className='image-container'>
-                <img 
-                    className='lyrics'
-                    src={marmotaLetra}
-                    alt="Album cover lyrics" />
-                <img 
-                    className='illustration'
-                    src={marmota}
-                    alt="Track illustration" />
+                <details name="player">
+                    <img
+                        className='lyrics'
+                        src={marmotaLetra}
+                        alt="Album cover lyrics" />
+                    <img
+                        className='illustration'
+                        src={marmota}
+                        alt="Track illustration" />
+                </details>
+
             </div>
         </div>
     )

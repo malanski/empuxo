@@ -4,14 +4,27 @@ import { Link } from 'react-router-dom'
 import ditadoPopularLetra from '../../../assets/ditadoPopularLetra.png'
 import ditadoPopularAudio from '../../../assets/audio/ditadoPopular.mp3'
 import { Icon } from '@mui/material'
+import ReactAudioPlayer from 'react-audio-player'
 
 export function DitadoPopular() {
     return (
         <div className='tracks'>
-            <audio className='tracks-player' controls>
+            
+            <ReactAudioPlayer
+                src={ditadoPopularAudio}
+                style={{
+                    width: '90%',
+                    backgroundColor: 'black',
+                    borderRadius: '20px 20px 0 0',
+                    padding: '5px',
+                    marginTop: '10px'
+                }}
+                controls
+            />
+            {/* <audio className='tracks-player' controls>
                 <source src={ditadoPopularAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
-            </audio>
+            </audio> */}
             <div className='tracks-navigation'>
 
                 <Link to="/tracks/hidra">
