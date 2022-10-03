@@ -27,20 +27,20 @@ import { AnoPassado } from './pages/tracks/13anoPassado';
 
 
 function App() {
-  
+
   // let hue = parseInt(Math.random() * 3)
   let number = 0;
   // let number = parseInt(Math.random() * 2);
   let scale = 10;
 
-  const draw = ( ctx, frameCount ) => {
-     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+  const draw = (ctx, frameCount) => {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
     // ctx.fillStyle = 'red'
     // ctx.beginPath()
     // ctx.arc(150, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI)
     // ctx.fill()
 
-    
+
 
     function drawingFlower() {
       // let hue = 1;
@@ -52,7 +52,7 @@ function App() {
       ctx.lineWidth = 1;
       ctx.beginPath();
       // ctx.arc(positionX, positionY, number, 0, Math.PI * 2); // X ,  Y,  raio, cut, ??cut?? 
-      ctx.arc(150, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI) 
+      ctx.arc(150, 100, 20 * Math.sin(frameCount * 0.05) ** 2, 0, 2 * Math.PI)
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
@@ -61,7 +61,7 @@ function App() {
       // hue++
       // hue += 0.5
     }
-    
+
     function animate() {
 
       drawingFlower();
@@ -83,10 +83,10 @@ function App() {
       // Draw each frame
       let angle = number * 0.05;  // intervalos para flores diferentes
       let radius = scale * Math.sqrt(number);
-      let positionX = radius * Math.sin(angle) + ctx.canvas.width ;
+      let positionX = radius * Math.sin(angle) + ctx.canvas.width;
       let positionY = radius * Math.cos(angle) + ctx.canvas.height;
 
-      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + 5 + ', 100%, 50%, 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
+      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + ', 100%, 50%, 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
 
       // ctx.fillStyle = 'hsl(' + hue + 5 + ', 100%, 50%';
       ctx.strokeStyle = 'hsl(' + number + 5 + ', 100%, 50%';
@@ -100,7 +100,7 @@ function App() {
       // number++
       // hue++
     }
-    
+
     function animate2() {
 
       drawingFlower();
@@ -110,14 +110,14 @@ function App() {
     animate2();
   }
 
-  
+
 
   return (
     <div className="App">
       <HashRouter>
-      <div className='canvas-container'>
-        <Canvas draw={mandala} />
-          
+        <div className='canvas-container'>
+          <Canvas draw={mandala} />
+
           <Canvas draw={draw} />
 
         </div>
@@ -126,18 +126,19 @@ function App() {
         {/* ROTAS */}
         <Routes>
           <Route
+            component={Home} exact
             path='/home'
             element={<Home />} />
           <Route
-            path='/tracks/'
+            component={Tracks} exact
+            path='/tracks'
             element={<Tracks />} />
           <Route
+            component={About} exact
             path='/about'
             element={<About />} />
-        </Routes>
 
-        {/* TRACKS */}
-        <Routes>
+          {/* TRACKS */}
           <Route
             path='/tracks/marmota'
             element={<Marmota />} />
@@ -179,8 +180,8 @@ function App() {
             element={<AnoPassado />} />
         </Routes>
 
-
         <Footer />
+        
       </HashRouter>
     </div>
   );

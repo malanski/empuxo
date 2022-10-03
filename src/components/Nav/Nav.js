@@ -5,13 +5,13 @@ export function Nav() {
     return (
         <div className='nav'>
             <ul>
-                <Link to="/">
+                <Link to="/home">
                     <li>Capa</li>
                 </Link>
                 <Link to="/tracks/">
                     <li>Todas as Faixas</li>
                 </Link>
-                <Link to="about">
+                <Link to="/about">
                     <li>Sobre</li>
                 </Link>
             </ul>

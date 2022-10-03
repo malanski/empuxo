@@ -1,7 +1,7 @@
 import '../track.scss'
 import marmota from '../../../assets/marmota.jpg'
 import { Link } from 'react-router-dom'
-import Player from '../../../components/Player/Player'
+// import Player from '../../../components/Player/Player'
 import marmotaLetra from '../../../assets/marmotaLetra.png'
 import marmotaAudio from '../../../assets/audio/marmota.mp3'
 import Icon from '@mui/material/Icon'
