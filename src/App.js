@@ -1,7 +1,7 @@
 import './App.scss';
 
 import { Header } from './components/Header';
-import { Footer } from './components/Footer/Footer';
+import { Footer } from './components/Footer';
 import Canvas from './components/Canvas/Canvas';
 
 import { Routes, Route, HashRouter } from 'react-router-dom';
@@ -121,7 +121,7 @@ function App() {
           <Canvas draw={draw} />
 
         </div>
-        <Header />
+        <Header component={Header} exact  />
 
         {/* ROTAS */}
         <Routes>
@@ -180,8 +180,8 @@ function App() {
             element={<AnoPassado />} />
         </Routes>
 
-        <Footer />
-        
+        <Footer component={Footer} exact />
+
       </HashRouter>
     </div>
   );

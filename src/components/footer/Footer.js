@@ -8,12 +8,10 @@ export function Footer() {
             <hr />
             <ul>
                 <li>
-                    <a href="https://www.youtube.com/channel/UCMO8be295Zay2OajfewJpMA"
-                        target='_blank'
-                        rel="noreferrer"
-                        title='Canal no Youtube'
-                        className="footer-links">
-
+                    <a className="footer-links"
+                        href="https://www.youtube.com/channel/UCMO8be295Zay2OajfewJpMA"
+                        target="_blank" rel="noreferrer"
+                        title='Canal no Youtube'>
                         <Icon>
                             <span className="material-icons-outlined">
                                 smart_display
@@ -23,21 +21,11 @@ export function Footer() {
                     </a>
                 </li>
 
-                {/* <li>
-                    <a href="#"
-                    target='_blank'
-                    rel="noreferrer"
-                    title='em construção'>
-                    Instagram
-                </a>
-                </li> */}
                 <li>
-                    <a href="https://soundcloud.com/pao-e-circo"
-                        target='_blank'
-                        rel="noreferrer"
-                        title='Pão e circo + Empuxo'
-                        className="footer-links">
-
+                    <a className="footer-links"
+                        href="https://soundcloud.com/pao-e-circo"
+                        target="_blank" rel="noreferrer"
+                        title='Pão e circo + Empuxo'>
                         <Icon>
                             <span className="material-icons-outlined">
                                 cloud
@@ -53,13 +41,11 @@ export function Footer() {
             <div>
                 <p>Desenvolvido por Ulisses Malanski Copyrights ₢ - 2022</p>
                 <br />
-
                     <a href="https://github.com/malanski" alt='github profile'
                         target='_blank'
                         rel="noreferrer"
                         title='my web development projects'>
-                        <GitHubIcon>
-                        </GitHubIcon>
+                        <GitHubIcon />
                     </a>
             </div>
 
