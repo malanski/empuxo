@@ -14,11 +14,16 @@ export function DitadoPopular() {
                 src={ditadoPopularAudio}
                 style={{
                     width: '90%',
+                    height: '80px',
+
                     backgroundColor: 'black',
                     borderRadius: '20px 20px 0 0',
                     padding: '5px',
-                    marginTop: '10px'
+                    marginTop: '10px',
+                    marginBottom: '0',
                 }}
+                preload='metadata'
+                controlsList='nodownload'
                 controls
             />
             {/* <audio className='tracks-player' controls>

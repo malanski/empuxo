@@ -15,11 +15,15 @@ export function Camarao() {
                 src={camaraoAudio}
                 style={{
                     width: '90%',
+                    height: '80px',
+
                     backgroundColor: 'black',
                     borderRadius: '20px 20px 0 0',
                     padding: '5px',
                     marginTop: '10px'
                 }}
+                preload='metadata'
+                controlsList='nodownload'
                 controls
             />
 
@@ -27,6 +31,7 @@ export function Camarao() {
                 <source src={camaraoAudio} type="audio/mpeg" />
                 Your browser does not support the audio tag.
             </audio> */}
+
             <div className='tracks-navigation'>
                 <Link to="/tracks/soAmetade">
                     <p>Anterior</p>
