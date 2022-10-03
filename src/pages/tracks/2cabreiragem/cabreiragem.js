@@ -11,7 +11,7 @@ export function Cabreiragem() {
 
 
             <audio className='tracks-player' controls>
-                <source src={cabreiragemAudio} type="audio/mpeg" />
+                <source src={cabreiragemAudio} preload='none' type="audio/mpeg" />
                 Your browser does not support the audio tag.
             </audio>
 

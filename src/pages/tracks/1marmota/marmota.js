@@ -11,7 +11,7 @@ export function Marmota() {
         <div className='tracks'>
 
             <audio className='tracks-player' controls>
-                <source src={marmotaAudio} type="audio/mpeg" />
+                <source src={marmotaAudio} preload='none' type="audio/mpeg" />
                 Sorry, your browser does not support the audio tag.
             </audio>
 
