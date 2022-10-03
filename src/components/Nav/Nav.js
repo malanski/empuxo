@@ -8,10 +8,10 @@ export function Nav() {
                 <Link to="/">
                     <li>Capa</li>
                 </Link>
-                <Link to="/tracks">
-                    <li>Faixas</li>
+                <Link to="/tracks/">
+                    <li>Todas as Faixas</li>
                 </Link>
-                <Link to="/about">
+                <Link to="about">
                     <li>Sobre</li>
                 </Link>
             </ul>
