@@ -1,11 +1,19 @@
 .header {
     padding: 20px;
     text-align: left;
-    background-color: black;
-    
+    // background-color: black
+    color: white;
     h1 {
         text-shadow: 3px 2px #ff0000;   
         letter-spacing: 5px;
         text-transform: uppercase;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 0;
+        
+    }
+    
 }
