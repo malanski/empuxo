@@ -13,7 +13,7 @@ export function PlayerHeader({ tracks }) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Destructure for conciseness
-  const { title, artist, color, image, audioSrc, length } = tracks[trackIndex];
+  const { title, artist, color, image, audioSrc, length, lyricsImage } = tracks[trackIndex];
 
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
@@ -138,14 +138,24 @@ export function PlayerHeader({ tracks }) {
             onKeyUp={onScrubEnd}
             style={{ background: trackStyling }}
           />
+           
           <h4 className="artist">{length}</h4>
+          <h4 className="artist">{" " + parseInt(trackProgress) + ":milliseconds"  }</h4>
+          {/* <div className="partOne">{lyrics.partOne}</div>
+          <div className="PartTwo">{lyrics.partTwo}</div> */}
         </div>
+        
         <Backdrop
           trackIndex={trackIndex}
           activeColor={color}
           isPlaying={isPlaying}
         />
       </div>
+      <img
+      className="bigArtwork"
+      src={lyricsImage}
+      alt={`track artwork for ${title} by ${artist}`}
+    />
     </div>
   );
 };
