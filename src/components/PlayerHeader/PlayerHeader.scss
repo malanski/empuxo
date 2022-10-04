@@ -203,7 +203,7 @@ $active-color: #642929;
         .audio-player {
             max-width: 100%;
             margin: 0;
-            height: auto;
+            height: 100%;
             .track-info {
                 width: 100%;
                 .artwork {
@@ -215,7 +215,7 @@ $active-color: #642929;
 
         }
         .bigArtwork {
-            max-width: 750px;
+            max-width: 650px;
         }
         
     }
