@@ -1,10 +1,10 @@
 $white: #fff;
-$active-color: #8be0e2;
+$active-color: #642929;
 
 .playerHeader {
     width: 100%;
-    // background: radial-gradient(circle, rgba(134,53,34,1) 21%, rgba(0,0,0,1) 90%);
-    background: $active-color;
+    background: radial-gradient(circle, $active-color 21%, rgba(0,0,0,1) 90%);
+    // background: $active-color;
     transition: background 0.4s ease;
 
 
@@ -66,25 +66,28 @@ $active-color: #8be0e2;
             border: none;
             cursor: pointer;
             width: 30%;
+            box-shadow: 2px 2px 25px 2px #333;
 
+        }
+        button:hover {
+            box-shadow: 2px 2px 40px 5px #333;
         }
 
         .prev {
-            background-color: rgb(59, 141, 121);
+            opacity: 0.4;
+            background-color: rgb(116, 21, 21);
             padding: 0;
             border-radius: 50%;
             
             svg {
                 width: 50px;
                 height: 50px;
-
-
             }
         }
 
         .next {
-
-            background-color: rgb(59, 141, 121);
+            opacity: 0.4;
+            background-color: rgb(116, 21, 21);
             padding: 0;
             border-radius: 50%;
 
@@ -96,7 +99,8 @@ $active-color: #8be0e2;
         }
 
         .play {
-            background-color: rgb(95, 176, 138);
+            background-color: rgb(64, 167, 119);
+            opacity: 0.4;
             padding: 0;
             border-radius: 50%;
 
@@ -109,7 +113,7 @@ $active-color: #8be0e2;
         }
 
         .pause {
-            background-color: rgb(176, 95, 95);
+            background-color: rgb(108, 19, 19);
             border-radius: 50%;
 
             svg {
