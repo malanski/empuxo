@@ -81,6 +81,7 @@ export function PlayerHeader({ tracks }) {
     } else {
       audioRef.current.pause();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
 
   // Handles cleanup and setup when changing tracks
@@ -98,6 +99,7 @@ export function PlayerHeader({ tracks }) {
       // Set the isReady ref as true for the next pass
       isReady.current = true;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [trackIndex]);
 
   useEffect(() => {
@@ -111,7 +113,8 @@ export function PlayerHeader({ tracks }) {
   return (
     <div className='playerHeader'>
       <div className="audio-player">
-        <div className="track-info">
+        <div className="track-info"
+          style={{background: `${color}`, opacity:'0.9', borderRadius:'20px'}}>
           <img
             className="artwork"
             src={image}
@@ -119,12 +122,6 @@ export function PlayerHeader({ tracks }) {
           />
           <h2 className="title">{title}</h2>
           <h3 className="artist">{artist}</h3>
-          <AudioControls
-            isPlaying={isPlaying}
-            onPrevClick={toPrevTrack}
-            onNextClick={toNextTrack}
-            onPlayPauseClick={setIsPlaying}
-          />
 
           <input
             type="range"
@@ -138,24 +135,34 @@ export function PlayerHeader({ tracks }) {
             onKeyUp={onScrubEnd}
             style={{ background: trackStyling }}
           />
-           
+          <AudioControls
+            isPlaying={isPlaying}
+            onPrevClick={toPrevTrack}
+            onNextClick={toNextTrack}
+            onPlayPauseClick={setIsPlaying}
+          />
+
           <h4 className="artist">{length}</h4>
-          <h4 className="artist">{" " + parseInt(trackProgress) + ":milliseconds"  }</h4>
+          <h4 className="artist">{" " + parseInt(trackProgress) + " "}</h4>
           {/* <div className="partOne">{lyrics.partOne}</div>
           <div className="PartTwo">{lyrics.partTwo}</div> */}
         </div>
-        
-        <Backdrop
+
+        {/* <Backdrop
           trackIndex={trackIndex}
           activeColor={color}
           isPlaying={isPlaying}
+        /> */}
+      </div>
+
+      <div style={{background:`${color}`, opacity: '0.8', borderRadius:'20px'}}>
+        <img
+          className="bigArtwork"
+          
+          src={lyricsImage}
+          alt={`track lyrics for ${title} by ${artist}`}
         />
       </div>
-      <img
-      className="bigArtwork"
-      src={lyricsImage}
-      alt={`track artwork for ${title} by ${artist}`}
-    />
     </div>
   );
-};
+}; 

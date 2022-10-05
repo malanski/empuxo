@@ -3,31 +3,47 @@ $active-color: #642929;
 
 .playerHeader {
     width: 100%;
+    // height: 100vh;
     background: radial-gradient(circle, $active-color 21%, rgba(0, 0, 0, 1) 90%);
     // background: $active-color;
     transition: background 0.4s ease;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // align-items: center;
+    // flex-wrap: nowrap;
+    // padding: 5px;
 
     .bigArtwork {
-        display: block;
-        height: auto;
-        max-width: 375px;
-        opacity: 0.5;
+        height: 100vh;
+        opacity: 0.4;
+        border-radius: 20px;
+
+        // para tela grande
+        width: 540px;
+
+        // para tela pequena
+        // width: 340px;
+        
 
     }
 
     .audio-player {
-        min-width: 360px;
-        max-width: 705px;
-        padding: 24px;
+        // para tela grande
+        // width: 540px;
+
+        // para tela pequena
+        // width: 340px;
+
         border-radius: 20px;
+        border: 2px solid white;
         box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
         margin: 0 auto 0 auto;
         color: $white;
-        height: 100%;
-
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
         .track-info {
             text-align: center;
@@ -36,10 +52,8 @@ $active-color: #642929;
 
             .artwork {
                 border-radius: 50%;
-                display: block;
                 margin: auto;
-                width: 100%;
-
+                width: 70%;
             }
 
             .title {
@@ -52,6 +66,106 @@ $active-color: #642929;
                 margin-top: 0;
                 font-size: 12px;
                 color: #e6a0a0;
+            }
+            .audio-controls {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                // height: 100px;
+                margin: 25px auto 50px;
+                background-color: #7c5757;
+                border-radius: 20px;
+                padding: 5px;
+                
+                button {
+                    color: white;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    width: 100px;
+                    height: auto;
+                    box-shadow: 2px 2px 25px 2px #333;
+                    
+                }
+        
+                button:hover {
+                    box-shadow: 2px 2px 40px 5px #333;
+                }
+        
+                .prev {
+                    opacity: 0.4;
+                    background-color: rgb(116, 21, 21);
+                    padding: 0;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: auto;
+        
+                    svg {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+        
+                .next {
+                    opacity: 0.4;
+                    background-color: rgb(116, 21, 21);
+                    padding: 0;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: auto;
+        
+                    svg {
+                        width: 50px;
+                        height: 50px;
+        
+                    }
+                }
+        
+                .play {
+                    background-color: rgb(64, 167, 119);
+                    opacity: 0.4;
+                    padding: 0;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: auto;
+        
+                    svg {
+                        width: 70px;
+                        height: 70px;
+        
+                    }
+                }
+        
+                .pause {
+                    background-color: rgb(108, 19, 19);
+                    border-radius: 50%;
+                    width: 100px;
+                    height: auto;
+        
+        
+                    svg {
+                        width: 70px;
+                        height: 70px;
+        
+                    }
+                }
+        
+                path {
+                    fill: $white;
+                }
+        
+            }
+        
+            input[type="range"] {
+                height: 13px;
+                -webkit-appearance: none;
+                width: 90%;
+                margin: 40px 5px;
+                border-radius: 8px;
+                background: #184041;
+                transition: background 2s ease;
+                cursor: pointer;
             }
         }
 
@@ -67,128 +181,25 @@ $active-color: #642929;
     }
 
 
-    .audio-controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        margin: 25px auto 50px;
-
-        button {
-            color: white;
-            background: none;
-            border: none;
-            cursor: pointer;
-            width: 100px;
-            height: auto;
-            box-shadow: 2px 2px 25px 2px #333;
-
-        }
-
-        button:hover {
-            box-shadow: 2px 2px 40px 5px #333;
-        }
-
-        .prev {
-            opacity: 0.4;
-            background-color: rgb(116, 21, 21);
-            padding: 0;
-            border-radius: 50%;
-            width: 100px;
-            height: auto;
-
-            svg {
-                width: 50px;
-                height: 50px;
-            }
-        }
-
-        .next {
-            opacity: 0.4;
-            background-color: rgb(116, 21, 21);
-            padding: 0;
-            border-radius: 50%;
-            width: 100px;
-            height: auto;
-
-            svg {
-                width: 50px;
-                height: 50px;
-
-            }
-        }
-
-        .play {
-            background-color: rgb(64, 167, 119);
-            opacity: 0.4;
-            padding: 0;
-            border-radius: 50%;
-            width: 100px;
-            height: auto;
-
-            svg {
-                width: 70px;
-                height: 70px;
-
-
-            }
-        }
-
-        .pause {
-            background-color: rgb(108, 19, 19);
-            border-radius: 50%;
-            width: 100px;
-            height: auto;
-
-
-            svg {
-                width: 70px;
-                height: 70px;
-
-            }
-        }
-
-        path {
-            fill: $white;
-        }
-
-
-        .color-backdrop {
-            background: linear-gradient(45deg, $active-color) 20%, transparent 100 no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-
-        .color-backdrop.playing {
-            animation: colorChange 2s alternate infinite;
-        }
-
+    
+    .color-backdrop {
+        // background: linear-gradient(45deg, $active-color, black);
+        background: linear-gradient(0deg, $active-color, green 40%, red);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        
+    }
+    .playing {
+        animation: colorChange 2s alternate infinite;
     }
 
-    input[type="range"] {
-        height: 5px;
-        -webkit-appearance: none;
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        background: #3b7677;
-        transition: background 2s ease;
-        cursor: pointer;
+    .color-backdrop.playing {
+        animation: colorChange 2s alternate infinite;
     }
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -202,143 +213,305 @@ $active-color: #642929;
     }
 }
 
-@media screen and (min-width: 1368px) {
+@media screen and (max-width: 1080px) {
     .playerHeader {
-        height: 100vh;
-
-        .audio-player {
-            max-width: 100%;
-            margin: 0;
-            height: 100%;
-
-            .track-info {
-                width: 100%;
-
-                .artwork {
-                    width: 70%;
-                }
-            }
-
-            .audio-controls {
-                button {
-                }
-            }
-
-        }
-
+    
         .bigArtwork {
-            max-width: 650px;
 
+            
+    
+            // para tela grande
+            width: 540px;
+    
+            // para tela pequena
+            // width: 340px;
+            
+    
         }
-
-    }
-
-}
-
-@media screen and (max-width: 808px) {
-    .playerHeader {
-        display: block;
-
+    
         .audio-player {
-            max-width: 100%;
-            margin: 0 auto;
+            // para tela grande
+            width: 540px;
+    
+            // para tela pequena
+            // width: 340px;
 
+    
             .track-info {
-                width: 100%;
 
+    
                 .artwork {
-                    width: 80%;
-                }
 
-
-            }
-            .audio-controls {
-                button {
-                    width: 90px;
-                }
-            }
-
-        }
-
-        .bigArtwork {
-            max-width: 100vw;
-            height: 100vh;
-        }
-
-    }
-
-}
-
-@media screen and (max-width: 375px) {
-    .playerHeader {
-        .audio-player {
-            padding: 2px;
-            min-width: 300px;
-            max-width: 325px;
-
-            .track-info {
-                width: 100%;
-                padding: 0;
-
-                .artwork {
-                    width: 80%;
-                }
-
-
-            }
-            .audio-controls {
-                .play {
-                    width: 50%;
     
-    
-                    svg {
-                        width: 40px;
-    
-                    }
                 }
     
-                .pause {
-                    width: 50%;
-    
-    
-                    svg {
-                        width: 40px;
-                        height: 40px;
-    
-                    }
-                }
-    
-                .prev {
-                    width: 50%;
-    
-    
-                    svg {
-                        width: 40px;
-                        height: 40px;
-    
-                    }
-                }
-    
-                .next {
-                    width: 50%;
-    
-    
-                    svg {
-                        width: 40px;
-                        height: 40px;
-    
-                    }
-                }
-            }
+                .title {
 
-        }
+                }
+    
+                .artist {
 
+                }
+                .audio-controls {
+
+                    
+                    button {
         
+                        
+                    }
+            
+                    button:hover {
+                    }
+            
+                    .prev {
+  
+            
+                        svg {
+                       
+                        }
+                    }
+            
+                    .next {
+                       
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    .play {
+                      
+                        svg {
+            
+                        }
+                    }
+            
+                    .pause {
+            
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    path {
+                    }
+            
+                }
+            
+                input[type="range"] {
 
-        .bigArtwork {
-            max-width: 100vw;
+                }
+            }
+    
+    
         }
 
-    }
-
+    
+    
+        
+     
+    }   
 }
+
+@media screen and (max-width: 728px) {
+    .playerHeader {
+    
+        .bigArtwork {
+
+            
+    
+            // para tela grande
+            // width: 540px;
+    
+            // para tela media
+            width: 420px;
+
+            // para tela pequena
+            // width: 340px;
+            
+    
+        }
+    
+        .audio-player {
+            // para tela grande
+            // width: 540px;
+    
+            // para tela pequena
+            width: 340px;
+
+    
+            .track-info {
+
+    
+                .artwork {
+
+    
+                }
+    
+                .title {
+
+                }
+    
+                .artist {
+
+                }
+                .audio-controls {
+
+                    
+                    button {
+        
+                        
+                    }
+            
+                    button:hover {
+                    }
+            
+                    .prev {
+  
+            
+                        svg {
+                       
+                        }
+                    }
+            
+                    .next {
+                       
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    .play {
+                      
+                        svg {
+            
+                        }
+                    }
+            
+                    .pause {
+            
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    path {
+                    }
+            
+                }
+            
+                input[type="range"] {
+
+                }
+            }
+    
+        }
+     
+    }  
+}
+
+@media screen and (max-width: 810px) {
+    .playerHeader {
+    
+        .bigArtwork {
+
+            
+    
+            // para tela grande
+            // width: 540px;
+    
+            // para tela pequena
+            width: 340px;
+            
+    
+        }
+    
+        .audio-player {
+            // para tela grande
+            // width: 540px;
+    
+            // para tela pequena
+            width: 340px;
+
+    
+            .track-info {
+
+    
+                .artwork {
+
+    
+                }
+    
+                .title {
+
+                }
+    
+                .artist {
+
+                }
+                .audio-controls {
+
+                    
+                    button {
+        
+                        
+                    }
+            
+                    button:hover {
+                    }
+            
+                    .prev {
+  
+            
+                        svg {
+                       
+                        }
+                    }
+            
+                    .next {
+                       
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    .play {
+                      
+                        svg {
+            
+                        }
+                    }
+            
+                    .pause {
+            
+            
+                        svg {
+            
+                        }
+                    }
+            
+                    path {
+                    }
+            
+                }
+            
+                input[type="range"] {
+
+                }
+            }
+    
+    
+        }
+
+    
+    
+        
+     
+    }   
+}
+
+

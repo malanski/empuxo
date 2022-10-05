@@ -1,19 +1,32 @@
 .nav {
 
     ul {
-        padding: 20px 0 0 0;
+        padding: 20px 15px 20px 15px;
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        font-size: 20px;
+        font-size: 35px;
         font-weight: bold;
         text-transform: uppercase;
     }
 
 }
+
+@media screen and (max-width: 728px) {
+    .nav {
+        ul{
+            padding: 20px 10px 20px 10px ;
+            font-size: 25px;
+            
+        }
+        
+    }
+}
+
 @media screen and (max-width: 412px) {
     .nav {
         ul{
+            padding: 20px 5px 20px 5px ;
             font-size: 18px;
             
         }

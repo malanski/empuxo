@@ -46,7 +46,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: marmotaAudio,
         length: '3:44',
-        color: '2f4cca',
+        color: '#4a040e',
         image: marmota,
         lyricsImage: marmotaLetra,
         lyrics: {
@@ -86,7 +86,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: cabreiragemAudio,
         length: '3:38',
-        color: '#00aeb0',
+        color: '#66081e',
         image: cabreiragem,
         lyricsImage: cabreiragemLetra,
         lyrics:{partOne: <p>
@@ -120,12 +120,12 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: ondePossoTeVerAudio,
         length: '3:37',
-        color: '#00aeb0',
+        color: '#450c14',
         image: ondePossoTeVer,
         lyricsImage: ondePossoTeVerLetra,
         lyrics:{
             partOne: ondePossoTeVerLetra,
-        partTwo: <p>Sonha com o dia todo repetindo a resposta, de novo, a mesma resposta
+            partTwo: <p>Sonha com o dia todo repetindo a resposta, de novo, a mesma resposta
             <br></br>
             de novo, a mesma marmota
             <br></br>
@@ -150,7 +150,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: camaleaoAudio,
         length: '3:35',
-        color: '#00aeb0',
+        color: '#2e070c',
         image: camaleao,
         lyricsImage: camaleaoLetra,
         lyrics:{partOne: <p>
@@ -190,7 +190,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: viajanteAudio,
         length: '4:37',
-        color: '#B30E00',
+        color: '#1c0206',
         image: viajante,
         lyricsImage: viajanteLetra,
         lyrics:{partOne: <p>
@@ -230,7 +230,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: hidraAudio,
         length: '4:13',
-        color: '#ffb77a',
+        color: '#120103',
         image: hidra,
         lyricsImage: hidraLetra,
         lyrics:{partOne: <p>
@@ -270,7 +270,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: ditadoPopularAudio,
         length: '4:06',
-        color: '##5f9fff',
+        color: '#1c0104',
         image: ditadoPopular,
         lyricsImage: ditadoPopularLetra,
         lyrics:{partOne: <p>
@@ -310,7 +310,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: soAmetadeAudio,
         length: '6:20',
-        color: '#40A918',
+        color: '#591821',
         image: soAmetade,
         lyricsImage: soAmetadeLetra,
         lyrics:{partOne: <p>
@@ -350,7 +350,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: camaraoAudio,
         length: '4:10',
-        color: '#7F005F',
+        color: '#2b0309',
         image: camarao,
         lyricsImage: camaraoLetra,
         lyrics:{partOne: <p>
@@ -390,7 +390,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: casuloAudio,
         length: '4:33',
-        color: '#00aeb0',
+        color: '#3d0e15',
         image: casulo,
         lyricsImage: casuloLetra,
         lyrics:{partOne: <p>
@@ -430,7 +430,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: qualehAudio,
         length: '4:14',
-        color: '#E3006A',
+        color: '#2e0d12',
         image: qualeh,
         lyricsImage: qualehLetra,
         lyrics:{partOne: <p>
@@ -470,7 +470,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: aphantasiaAudio,
         length: '5:05',
-        color: '#00aeb0',
+        color: '#2e050b',
         image: aphantasia,
         lyricsImage: aphantasiaLetra,
         lyrics:{partOne: <p>
@@ -510,7 +510,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: anoPassadoAudio,
         length: '3:55',
-        color: '#00aeb0',
+        color: '#1f0508',
         image: anoPassado,
         lyricsImage: anoPassadoLetra,
         lyrics:{partOne: <p>
