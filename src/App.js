@@ -1,4 +1,5 @@
 import './App.scss';
+import './components/Canvas/Mandala.scss'
 
 import { Header } from './components/Header';
 import { Footer } from './components/footer';
@@ -28,46 +29,44 @@ import { AnoPassado } from './pages/tracks/13anoPassado';
 
 function App() {
 
-  // let hue = parseInt(Math.random() * 3)
-  let number = 0;
-  // let number = parseInt(Math.random() * 2);
-  let scale = 10;
+  let hue = parseInt(Math.random() * 3)
+  // let number = 0;
+  let number = parseInt(Math.random() * 0.02);
+  let scale = 5;
 
   const draw = (ctx, frameCount) => {
-    // ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-    // ctx.fillStyle = 'red'
-    // ctx.beginPath()
-    // ctx.arc(150, 100, 20*Math.sin(frameCount*0.05)**2, 0, 2*Math.PI)
-    // ctx.fill()
-
-
-
-    function drawingFlower() {
-      // let hue = 1;
+   
+    function drawingCircle() {
+      // number = 1
+      // hue = 1;
       // Draw each frame
       // ctx.fillStyle = 'hsl(' + hue + 5 + ', 100%, 50%';
       // ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
 
       ctx.fillStyle = 'hsl(linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
       //ctx.fillStyle = 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
-      ctx.strokeStyle = 'hsl(' + number + 5 + ', 100%, 50%';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'hsl(' + number/2 + ', 100%, 50%';
+      ctx.lineWidth = 5;
       ctx.beginPath();
       // ctx.arc(positionX, positionY, number, 0, Math.PI * 2); // X ,  Y,  raio, cut, ??cut?? 
-      ctx.arc(150, 75, 20 * Math.sin(frameCount * 0.05) ** 2, 0, 2 * Math.PI)
+      ctx.arc(149, 75, 200 * Math.sin(frameCount * 0.005) ** 2, 0, 2 * Math.PI)
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
 
-      // number++
-      // hue++
+      number++
+
+      // ctx.setTimeout(() => {
+      //   number++
+      // }, 1000);
+      hue++
       // hue += 0.5
     }
 
     function animate() {
 
-      drawingFlower();
-      if (number > 10) return
+      drawingCircle();
+      if (number > 200) return
       requestAnimationFrame(animate);
     }
     animate();
@@ -81,18 +80,18 @@ function App() {
     // ctx.fill()
 
     let hue = 1
-    function drawingFlower2() {
+    function drawingMandala() {
       // Draw each frame
-      let angle = number * 0.05;  // intervalos para flores diferentes
-      let radius = scale * Math.sqrt(number);
+      let angle = number/2;  // intervalos para flores diferentes
+      let radius = scale * Math.sqrt(number );
       let positionX = radius * Math.sin(angle) + ctx.canvas.width /2;
-      let positionY = radius * Math.cos(angle) + ctx.canvas.height /2.5;
+      let positionY = radius * Math.cos(angle) + ctx.canvas.height /2.2;
 
-      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + ', 100%, 50%, 0%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
+      ctx.fillStyle = 'hsl(linear-gradient(90deg, hsl(' + hue + ', 50%, 0%, 10%, rgba(34,34,134,1) 25%, rgba(0,212,255,1) 100%)';
 
       // ctx.fillStyle = 'hsl(' + hue + 5 + ', 100%, 50%';
-      ctx.strokeStyle = 'hsl(' + number + 5 + ', 100%, 50%';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'hsl(' + hue + ', 70%, 70%';
+      ctx.lineWidth = 1.5;
       ctx.beginPath();
       ctx.arc(positionX, positionY, 100, 0, Math.PI * 2); // X ,  Y,  raio, cut, ??cut?? 
       ctx.closePath();
@@ -105,9 +104,10 @@ function App() {
 
     function animate2() {
 
-      drawingFlower2();
-      if (number > 50) return
+      drawingMandala();
+      if (number > 120) return
       requestAnimationFrame(animate2);
+      
     }
     animate2();
   }
@@ -120,7 +120,7 @@ function App() {
         <div className='canvas-container'>
           <Canvas draw={mandala} />
 
-          <Canvas draw={draw} />
+          <Canvas id='canvas2' draw={draw} />
 
         </div>
         <Header component={Header} exact />

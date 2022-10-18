@@ -15,7 +15,8 @@ const Canvas = props => {
   return (
     (
       <div>
-        <canvas id='canvas1' ref={canvasRef} {...rest}/>
+        <canvas id='canvas1' ref={canvasRef} {...rest} title="você esta vendo uma animação produzida com códigos javaScript"/>
+        
         {/* <canvas id='canvas2' ref={canvasRef} {...rest}/> */}
         {/* <canvas id='canvas2' ref={canvasRef2} {...rest2}/> */}
       </div>

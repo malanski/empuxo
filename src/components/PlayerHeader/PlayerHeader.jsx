@@ -114,14 +114,13 @@ export function PlayerHeader({ tracks }) {
     <div className='playerHeader'>
       <div className="audio-player">
         <div className="track-info"
-          style={{background: `${color}`, opacity:'0.9', borderRadius:'20px'}}>
-          <img
-            className="artwork"
-            src={image}
-            alt={`track artwork for ${title} by ${artist}`}
+          style={{ background: `${color}`, opacity: '0.9', borderRadius: '20px' }}>
+          <AudioControls
+            isPlaying={isPlaying}
+            onPrevClick={toPrevTrack}
+            onNextClick={toNextTrack}
+            onPlayPauseClick={setIsPlaying}
           />
-          <h2 className="title">{title}</h2>
-          <h3 className="artist">{artist}</h3>
 
           <input
             type="range"
@@ -135,15 +134,21 @@ export function PlayerHeader({ tracks }) {
             onKeyUp={onScrubEnd}
             style={{ background: trackStyling }}
           />
-          <AudioControls
-            isPlaying={isPlaying}
-            onPrevClick={toPrevTrack}
-            onNextClick={toNextTrack}
-            onPlayPauseClick={setIsPlaying}
+          <h4 className="artist">{" " + parseInt(trackProgress) + " "}</h4>
+
+          <h2 className="title">{title}</h2>
+
+          <img
+            className="artwork"
+            src={image}
+            alt={`track artwork for ${title} by ${artist}`}
           />
+          <h3 className="artist">{artist}</h3>
+
+
+
 
           <h4 className="artist">{length}</h4>
-          <h4 className="artist">{" " + parseInt(trackProgress) + " "}</h4>
           {/* <div className="partOne">{lyrics.partOne}</div>
           <div className="PartTwo">{lyrics.partTwo}</div> */}
         </div>
@@ -155,10 +160,10 @@ export function PlayerHeader({ tracks }) {
         /> */}
       </div>
 
-      <div style={{background:`${color}`, opacity: '0.8', borderRadius:'20px'}}>
+      <div style={{ background: `${color}`, opacity: '0.8', borderRadius: '20px' }}>
         <img
           className="bigArtwork"
-          
+
           src={lyricsImage}
           alt={`track lyrics for ${title} by ${artist}`}
         />

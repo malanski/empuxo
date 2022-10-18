@@ -1,3 +1,11 @@
+.canvas-container {
+    background-image: url('../../assets/albumCover.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.28;
+
+}
 #canvas1 {
     position: absolute;
     /* border: 1px solid black;
@@ -6,39 +14,41 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
-    background-image: url('../../assets/albumCover.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    opacity: 0.38;
+
+
 }
+
+.titulo {
+    width: 50vw;
+    text-transform: uppercase;
+}
+
 
 #canvas2 {
     position: absolute;
     /* border: 1px solid black;
-    background: blue; */
+        background: blue; */
     top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-}
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.38;
+    // background-image: url('../../assets/albumCover.jpg');
+    // background-position: center;
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+    // transform: spin linear infinite;
 
-#canvas3 {
-    // position: absolute;
-    /* border: 1px solid black;
-    background: blue; */
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-}
 
-#canvas4 {
-    // position: absolute;
-    /* border: 1px solid black;
-    background: blue; */
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.canvas2 {
+    opacity: 0.1;
+
 }

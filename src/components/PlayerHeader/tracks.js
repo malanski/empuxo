@@ -46,7 +46,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: marmotaAudio,
         length: '3:44',
-        color: '#4a040e',
+        color: '#360000',
         image: marmota,
         lyricsImage: marmotaLetra,
         lyrics: {
@@ -86,7 +86,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: cabreiragemAudio,
         length: '3:38',
-        color: '#66081e',
+        color: '#40031b',
         image: cabreiragem,
         lyricsImage: cabreiragemLetra,
         lyrics:{partOne: <p>
@@ -120,7 +120,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: ondePossoTeVerAudio,
         length: '3:37',
-        color: '#450c14',
+        color: '#122630',
         image: ondePossoTeVer,
         lyricsImage: ondePossoTeVerLetra,
         lyrics:{
@@ -150,7 +150,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: camaleaoAudio,
         length: '3:35',
-        color: '#2e070c',
+        color: '#030226',
         image: camaleao,
         lyricsImage: camaleaoLetra,
         lyrics:{partOne: <p>
@@ -190,7 +190,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: viajanteAudio,
         length: '4:37',
-        color: '#1c0206',
+        color: '#140726',
         image: viajante,
         lyricsImage: viajanteLetra,
         lyrics:{partOne: <p>
@@ -230,7 +230,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: hidraAudio,
         length: '4:13',
-        color: '#120103',
+        color: '#06170c',
         image: hidra,
         lyricsImage: hidraLetra,
         lyrics:{partOne: <p>
@@ -270,7 +270,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: ditadoPopularAudio,
         length: '4:06',
-        color: '#1c0104',
+        color: '#2d212e',
         image: ditadoPopular,
         lyricsImage: ditadoPopularLetra,
         lyrics:{partOne: <p>
@@ -310,7 +310,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: soAmetadeAudio,
         length: '6:20',
-        color: '#591821',
+        color: '#292e15',
         image: soAmetade,
         lyricsImage: soAmetadeLetra,
         lyrics:{partOne: <p>
@@ -350,7 +350,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: camaraoAudio,
         length: '4:10',
-        color: '#2b0309',
+        color: '#3b0f00',
         image: camarao,
         lyricsImage: camaraoLetra,
         lyrics:{partOne: <p>
@@ -390,7 +390,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: casuloAudio,
         length: '4:33',
-        color: '#3d0e15',
+        color: '#120226',
         image: casulo,
         lyricsImage: casuloLetra,
         lyrics:{partOne: <p>
@@ -430,7 +430,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: qualehAudio,
         length: '4:14',
-        color: '#2e0d12',
+        color: '#001c01',
         image: qualeh,
         lyricsImage: qualehLetra,
         lyrics:{partOne: <p>
@@ -470,7 +470,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: aphantasiaAudio,
         length: '5:05',
-        color: '#2e050b',
+        color: '#1f0103',
         image: aphantasia,
         lyricsImage: aphantasiaLetra,
         lyrics:{partOne: <p>
@@ -510,7 +510,7 @@ const trackFiles = [
         artist: 'Empuxo - Ulisses Malanski',
         audioSrc: anoPassadoAudio,
         length: '3:55',
-        color: '#1f0508',
+        color: '#170602',
         image: anoPassado,
         lyricsImage: anoPassadoLetra,
         lyrics:{partOne: <p>
