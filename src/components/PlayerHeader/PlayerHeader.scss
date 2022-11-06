@@ -11,7 +11,7 @@ $active-color: #642929;
     flex-wrap: nowrap;
 
     .bigArtwork {
-        display: block;
+        // display: block;
         height: auto;
         max-width: 375px;
         opacity: 0.5;
@@ -26,7 +26,7 @@ $active-color: #642929;
         box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
         margin: 0 auto 0 auto;
         color: $white;
-        height: 100%;
+        height: 100vh;
 
 
         .track-info {
@@ -235,7 +235,7 @@ $active-color: #642929;
 
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 740px) {
     .playerHeader {
         display: block;
 
@@ -261,7 +261,7 @@ $active-color: #642929;
         }
 
         .bigArtwork {
-            max-width: 100vw;
+            max-width: 90%;
             height: 100vh;
         }
 
@@ -269,7 +269,7 @@ $active-color: #642929;
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     .playerHeader {
         .audio-player {
             padding: 2px;
@@ -336,7 +336,7 @@ $active-color: #642929;
         
 
         .bigArtwork {
-            max-width: 100vw;
+            max-width: 90%;
         }
 
     }

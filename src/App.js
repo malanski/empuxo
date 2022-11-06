@@ -92,7 +92,7 @@ function App() {
       ctx.strokeStyle = 'hsl(' + number + 5 + ', 100%, 50%';
       ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.arc(positionX, positionY, 100, 0, Math.PI * 2); // X ,  Y,  raio, cut, ??cut?? 
+       ctx.arc(positionX, positionY, 100, 0, Math.PI * 2); // X ,  Y,  raio, cut, ??cut?? 
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
@@ -103,24 +103,33 @@ function App() {
 
     function animate2() {
 
-      drawingFlower();
+       drawingFlower();
       if (number > 5) return
       requestAnimationFrame(animate2);
     }
     animate2();
+
   }
 
-
-
+  const flowers = async (animate2) => {
+  //  await animate()
+  //   animate2()
+    let number = 50
+    console.log(number)
+  }
   return (
     <div className="App">
       <HashRouter>
-        <div className='canvas-container'>
           <Canvas draw={mandala} />
+          <button
+            className='canvas-container'
+            // onClick={()=>flowers()}
+            // onClick={()=>animate()}
+            >
 
           <Canvas draw={draw} />
 
-        </div>
+        </button>
         <Header component={Header} exact  />
 
         {/* ROTAS */}

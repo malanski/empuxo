@@ -13,7 +13,15 @@ export function PlayerHeader({ tracks }) {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Destructure for conciseness
-  const { title, artist, color, image, audioSrc, length, lyricsImage } = tracks[trackIndex];
+  const { 
+    title, 
+    artist, 
+    color, 
+    image, 
+    audioSrc, 
+    length, 
+    lyricsImage
+   } = tracks[trackIndex];
 
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
@@ -81,10 +89,11 @@ export function PlayerHeader({ tracks }) {
     } else {
       audioRef.current.pause();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
 
   // Handles cleanup and setup when changing tracks
-  useEffect(() => {
+  useEffect( () => {
     audioRef.current.pause();
 
     audioRef.current = new Audio(audioSrc);
@@ -98,6 +107,7 @@ export function PlayerHeader({ tracks }) {
       // Set the isReady ref as true for the next pass
       isReady.current = true;
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [trackIndex]);
 
   useEffect(() => {
@@ -112,6 +122,7 @@ export function PlayerHeader({ tracks }) {
     <div className='playerHeader'>
       <div className="audio-player">
         <div className="track-info">
+          <h2>Instrumental</h2>
           <img
             className="artwork"
             src={image}
